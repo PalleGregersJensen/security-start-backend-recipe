@@ -24,6 +24,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.servlet.util.matcher.MvcRequestMatcher;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
 
+
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
@@ -32,6 +33,7 @@ import javax.crypto.spec.SecretKeySpec;
 
 @Configuration
 public class SecurityConfig {
+
 
   @Value("${app.secret-key}")
   private String tokenSecret;
