@@ -10,7 +10,8 @@ import java.util.Arrays;
 @Configuration
 public class CorsConfig {
 
-    //When you know the domain name for your client, add it below before deployment
+    //"http://localhost:8080"
+    // When you know the domain name for your client, add it below before deployment in example.com
     private static final String[] ALLOWED_ORIGINS = new String[] {
             "*",
             "https://example.com/",
