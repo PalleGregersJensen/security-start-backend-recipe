@@ -64,6 +64,9 @@ public class SecurityConfig {
             .requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/recipes")).permitAll()
             .requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/recipes/*")).permitAll()
 
+            // Example of how to set up authentication to certain endpoints and their roles
+            //.requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/recipes/*")).hasAuthority("USER)
+
 
             //Allow index.html for anonymous users
             .requestMatchers(mvcMatcherBuilder.pattern(HttpMethod.GET, "/index.html")).permitAll()
